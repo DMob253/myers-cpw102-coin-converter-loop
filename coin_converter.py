@@ -13,26 +13,29 @@ repeat = 'y'
 
 # variable created to start a loop 
 while repeat.lower() == 'y':
+      #INDENT EVERYTHING!
+      # get input
+      print('We will convert coins to cents.')
+      quarters = int(input('How many quarters? '))
+      dimes = int(input('How many dimes? '))
+      nickels = int(input('How many nickels? '))
+      pennies = int(input('How many pennies? '))
 
-# get input
-print('We will convert coins to cents.')
-quarters = int(input('How many quarters? '))
-dimes = int(input('How many dimes? '))
-nickels = int(input('How many nickels? '))
-pennies = int(input('How many pennies? '))
+      # process the input,
+      # calculate the total value, in cents,
+      # of the coins input by the user.
+      cents = CENTS_PER_QUARTER * quarters \
+            + CENTS_PER_DIME * dimes \
+            + CENTS_PER_NICKEL * nickels \
+            + pennies
 
-# process the input,
-# calculate the total value, in cents,
-# of the coins input by the user.
-cents = CENTS_PER_QUARTER * quarters \
-      + CENTS_PER_DIME * dimes \
-      + CENTS_PER_NICKEL * nickels \
-      + pennies
-
-# display the original coin quantities
-# and the calculated value.
-print( quarters, 'quarters',
-       dimes, 'dimes',
-       nickels, 'nickels',
-       pennies, 'pennies',
-       'is', cents, 'cents.')
+      # display the original coin quantities
+      # and the calculated value.
+      print( quarters, 'quarters',
+            dimes, 'dimes',
+            nickels, 'nickels',
+            pennies, 'pennies',
+            'is', cents, 'cents.')
+      
+      # asks user to continue converting
+      repeat = input("Do you want to convert more coins? (Enter y for yes): ") 
