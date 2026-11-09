@@ -36,6 +36,9 @@ while repeat.lower() == 'y':
             nickels, 'nickels',
             pennies, 'pennies',
             'is', cents, 'cents.')
-      
+      # used to add spacing 
+      print()  
       # asks user to continue converting
       repeat = input("Do you want to convert more coins? (Enter y for yes): ") 
+      # used to add spacing 
+      print()
