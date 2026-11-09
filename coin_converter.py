@@ -10,7 +10,9 @@ CENTS_PER_NICKEL = 5   # a nickel is 5 cents
 
 # created variable that will go with a loop function
 repeat = 'y' 
-# The original program calculated the value of some coins.
+
+# variable created to start a loop 
+while repeat.lower() == 'y':
 
 # get input
 print('We will convert coins to cents.')
